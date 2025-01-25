@@ -24,7 +24,7 @@ const Shopping = ({
 
   const updateShopping = async () => {
     setProgress(10);
-    
+
     const url = `https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=${apiKey}&page=${
       page + 1
     }&pageSize=${pageSize}`;
@@ -58,6 +58,7 @@ const Shopping = ({
     setPage(page + 1);
 
     let data = await fetch(url);
+    console.log("data: ", data);
     let parsedData = await data.json();
     console.log(parsedData);
     setArticles(articles.concat(parsedData.articles));
