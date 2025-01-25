@@ -4,7 +4,8 @@
   "main": "proxy.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon api/proxy.js"
+    "start": "nodemon api/proxy.js",
+    "build": "react-scripts build"
   },
   "author": "",
   "license": "ISC",
